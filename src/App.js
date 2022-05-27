@@ -50,7 +50,6 @@ function App() {
 
   useEffect(() => {
     const getData = JSON.parse(localStorage.getItem('react-notes'));
-  console.log("Get data -->",getData);
     if(getData){
       setNotes(getData);
     }
@@ -58,25 +57,8 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('react-notes', JSON.stringify(notes));
-    console.log("Set data---->",notes);
   },[notes]);
-// useEffect(() => {
-// 		const savedNotes = JSON.parse(
-// 			localStorage.getItem('react-notes-app-data')
-// 		);
-
-// 		if (savedNotes) {
-// 			setNotes(savedNotes);
-// 		}
-// 	}, []);
-
-// 	useEffect(() => {
-// 		localStorage.setItem(
-// 			'react-notes-app-data',
-// 			JSON.stringify(notes)
-// 		);
-// 	}, [notes]);
-
+  
   return (
     <div className={`${darkTheme && 'dark-theme'}`}>
       <div className="container">
