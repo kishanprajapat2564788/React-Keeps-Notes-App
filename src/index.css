@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 100vh;
+}
+.dark-theme {
+    background-color: black;
+}
+.dark-theme h1 {
+    color: white;
+}
+.note-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.Note-file {
+    background-color: #80B7EB;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+}
+.note_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Note-file.custom-css {
+    background-color: #ffd359;
+}
+textarea {
+    outline: none;
+    border: none;
+    background-color: #ffd359;
+    resize: none;
+}
+textarea::placeholder {
+    color: rgb(14, 13, 13);
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+.Save-Button {
+    border: none;
+    border-radius: 10px;
+    background-color: #e1e4f3;
+    padding: 5px 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+.Save-Button:hover {
+    background-color: #d1d7f2;
+    cursor: pointer;
+}
+.custom-button {
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #eaebef;
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 1.5rem;
+}
+.search input {
+    border: none;
+    background-color: #eaebef;
+    width: 100%;
+}
+.search input:focus {
+    outline: none;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+}
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
